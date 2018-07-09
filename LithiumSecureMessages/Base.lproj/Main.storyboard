@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LithiumSecureMessages" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5O3-MC-A3R">
+                                <rect key="frame" x="0.0" y="8" width="375" height="667"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Send Secure Message" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dnD-KA-Zoq">
+                                        <rect key="frame" x="92.5" y="322" width="190" height="23"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="m13-bx-QYq">
+                                        <rect key="frame" x="143" y="353" width="89" height="97"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="97" id="218-TH-BQ3"/>
+                                        </constraints>
+                                        <state key="normal" image="icons8-chat">
+                                            <attributedString key="attributedTitle"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="newMsg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zv1-m7-gdf"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="m13-bx-QYq" firstAttribute="top" secondItem="dnD-KA-Zoq" secondAttribute="bottom" constant="8" symbolic="YES" id="3oF-wE-eHF"/>
+                                    <constraint firstItem="dnD-KA-Zoq" firstAttribute="centerX" secondItem="5O3-MC-A3R" secondAttribute="centerX" id="IYF-d8-LMt"/>
+                                    <constraint firstItem="m13-bx-QYq" firstAttribute="centerX" secondItem="dnD-KA-Zoq" secondAttribute="centerX" id="Jre-fE-mWa"/>
+                                    <constraint firstItem="dnD-KA-Zoq" firstAttribute="centerY" secondItem="5O3-MC-A3R" secondAttribute="centerY" id="Pjv-ow-C6s"/>
+                                    <constraint firstItem="m13-bx-QYq" firstAttribute="leading" secondItem="z52-ly-cf4" secondAttribute="leading" constant="143" id="f6M-DZ-b3U"/>
+                                    <constraint firstItem="z52-ly-cf4" firstAttribute="bottom" secondItem="m13-bx-QYq" secondAttribute="bottom" constant="217" id="odq-wq-Y7h"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="z52-ly-cf4"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5O3-MC-A3R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="GeU-FM-tVu"/>
+                            <constraint firstAttribute="trailing" secondItem="5O3-MC-A3R" secondAttribute="trailing" id="Xze-Hx-1sY"/>
+                            <constraint firstItem="5O3-MC-A3R" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="-12" id="dKV-pS-EE8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-chat" width="25" height="25"/>
+    </resources>
+</document>
