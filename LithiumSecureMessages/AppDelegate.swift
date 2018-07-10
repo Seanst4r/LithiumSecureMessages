@@ -18,12 +18,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        
+        /** The appId connects to your Lithium messaging service
+         Replace the appId with the one generated for you by Lithium.
+         */
+        
         //default initialiser with vanilla display settings
         //Smooch.initWith(SKTSettings(appId: "5b3a4764864e1c00221e1415")) { (error: Error?, userInfo: [AnyHashable : Any]?) in
         
-        //Initialise with some example display and appearance customisations
-        Smooch.initWith(SKTSettings(appId: "5b3ab6f31fe8220022647ff0")) { (error: Error?, userInfo: [AnyHashable : Any]?) in
-        let settings = SKTSettings(appId: "5b3ab6f31fe8220022647ff0")
+        //Alternatively - Initialise with some example display and appearance settings
+        Smooch.initWith(SKTSettings(appId: "5b3e3e6bdd63f20023b86232")) { (error: Error?, userInfo: [AnyHashable : Any]?) in
+        let settings = SKTSettings(appId: "5b3e3e6bdd63f20023b86232")
             settings.conversationAccentColor = UIColor.cyan;
             settings.conversationStatusBarStyle = UIStatusBarStyle.default;
             
